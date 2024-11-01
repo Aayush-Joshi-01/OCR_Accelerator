@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
+.stApp {
+    background-color: #1e1e1e;
+}
+
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #bb86fc;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #bb86fc;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.stFileUploader {
+    border: 2px dashed #bb86fc;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: rgba(45, 45, 45, 0.5);
+}
+
+.stFileUploader:hover {
+    border-color: #3700b3;
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+.stButton > button {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.stButton > button:hover {
+    background-color: #3700b3;
+    color: #e0e0e0;
+}
+
+.stSpinner > div {
+    border-color: #bb86fc transparent transparent transparent;
+}
+
+.stSuccess, .stError {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.stSuccess {
+    border-color: #3fb950;
+    color: #3fb950;
+}
+
+.stError {
+    border-color: #f85149;
+    color: #f85149;
+}
+
+.css-1544g2n {
+    padding: 2rem 1rem;
+    background-color: #252525;
+}
+
+.css-1544g2n .stMarkdown {
+    font-size: 0.9rem;
+}
+
+.parsed-content {
+    background-color: rgba(45, 45, 45, 0.5);
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Remove Streamlit's default styles */
+.stMarkdown, .stMarkdown > div > div > p {
+    all: unset;
+}
+
+.stMarkdown {
+    display: block;
+}
