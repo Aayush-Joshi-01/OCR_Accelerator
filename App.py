@@ -39,11 +39,11 @@ class OCRApp:
         
         # Define CSS paths for different environments
         if is_colab:
-            css_path = "/content/OCR_Accelerator/assets/styless.css"
+            css_path = "/content/OCR_Accelerator/assets/styles.css"
         elif is_streamlit_cloud:
-            css_path = "path/for/streamlit/cloud/styless.css"
+            css_path = "path/for/streamlit/cloud/styles.css"
         else:
-            css_path = "assets/styless.css"
+            css_path = "assets/styles.css"
         
         # CSS loading with multiple fallback options
         css_loaded = False
