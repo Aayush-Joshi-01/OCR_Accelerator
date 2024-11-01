@@ -1,21 +1,28 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap');
 
+/* Base body styles */
 body {
     font-family: 'Poppins', sans-serif;
     color: #e0e0e0;
     background-color: #121212;
+    /* Add a smooth transition for any color changes */
+    transition: background-color 0.3s ease;
 }
 
+/* Streamlit app container */
 .stApp {
     background-color: #1e1e1e;
 }
 
+/* Main content container */
 .main .block-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
     max-width: 1000px;
 }
 
+/* Main heading styles */
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #bb86fc;
@@ -24,8 +31,11 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    /* Add a subtle animation on page load */
+    animation: fadeIn 1s ease-out;
 }
 
+/* Secondary heading styles */
 h2 {
     color: #bb86fc;
     font-size: 1.8rem;
@@ -34,12 +44,14 @@ h2 {
     font-weight: 600;
 }
 
+/* Paragraph styles */
 p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
+/* File uploader styles */
 .stFileUploader {
     border: 2px dashed #bb86fc;
     border-radius: 10px;
@@ -49,11 +61,15 @@ p {
     background-color: rgba(45, 45, 45, 0.5);
 }
 
+/* File uploader hover effect */
 .stFileUploader:hover {
     border-color: #3700b3;
     background-color: rgba(55, 55, 55, 0.5);
+    /* Add a subtle scale effect on hover */
+    transform: scale(1.02);
 }
 
+/* Button styles */
 .stButton > button {
     background-color: #bb86fc;
     color: #121212;
@@ -65,15 +81,20 @@ p {
     font-weight: 600;
 }
 
+/* Button hover effect */
 .stButton > button:hover {
     background-color: #3700b3;
     color: #e0e0e0;
+    /* Add a subtle scale effect on hover */
+    transform: scale(1.05);
 }
 
+/* Loading spinner styles */
 .stSpinner > div {
     border-color: #bb86fc transparent transparent transparent;
 }
 
+/* Success and error message styles */
 .stSuccess, .stError {
     background-color: transparent;
     border: 1px solid;
@@ -81,27 +102,34 @@ p {
     padding: 0.75rem;
     margin-top: 1rem;
     font-size: 0.9rem;
+    /* Add a fade-in animation for messages */
+    animation: fadeIn 0.5s ease-out;
 }
 
+/* Success message specific styles */
 .stSuccess {
     border-color: #3fb950;
     color: #3fb950;
 }
 
+/* Error message specific styles */
 .stError {
     border-color: #f85149;
     color: #f85149;
 }
 
+/* Sidebar styles */
 .css-1544g2n {
     padding: 2rem 1rem;
     background-color: #252525;
 }
 
+/* Sidebar markdown styles */
 .css-1544g2n .stMarkdown {
     font-size: 0.9rem;
 }
 
+/* Parsed content container styles */
 .parsed-content {
     background-color: rgba(45, 45, 45, 0.5);
     border: 1px solid #444444;
@@ -110,13 +138,18 @@ p {
     margin-top: 1rem;
     font-size: 0.9rem;
     line-height: 1.5;
+    /* Add a subtle fade-in animation */
+    animation: fadeIn 0.8s ease-out;
 }
 
+/* Image container styles */
 .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
+    /* Add a subtle zoom-in animation */
+    animation: zoomIn 0.8s ease-out;
 }
 
 /* Remove Streamlit's default styles */
@@ -126,4 +159,15 @@ p {
 
 .stMarkdown {
     display: block;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
